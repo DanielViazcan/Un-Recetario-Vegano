@@ -1,0 +1,19 @@
+.rectas1, .recetas2, .receta3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.recetas1 article, .recetas2 article, .recetas3 article{
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.recetas1 img, .recetas2 img, .recetas3 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+.recetas1 p, .recetas2 p, .recetas3 p {
+    margin-bottom: 10px;
+}

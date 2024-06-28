@@ -1,0 +1,13 @@
+@media (max-width: 768px){
+    .responsiveg{
+        display: flex;
+        flex-direction: column ;
+    }
+    .imagenes-galeria {
+        height: auto;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
