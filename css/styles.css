@@ -1,87 +1,82 @@
-@mixin estilos-comunes {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
 
-  *::selection {
-    background-color: rgb(46, 129, 46);
-    color: aliceblue;
-  }
+*::selection {
+  background-color: rgb(46, 129, 46);
+  color: aliceblue;
+}
 
-  .hero, .hero2 {
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-  }
+.hero {
+  background-image: url(../assets/fondopagina.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
 
-  .hero {
-    background-image: url(../assets/fondopagina.jpg);
-  }
+.hero2 {
+  background-image: url(../assets/fondo-dulce.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
 
-  .hero2 {
-    background-image: url(../assets/fondo-dulce.jpg);
-  }
+.logo {
+  width: 100px;
+  height: 80px;
+}
 
-  .logo {
-    width: 100px;
-    height: 80px;
-  }
+.fondo-texto {
+  background-color: rgba(0, 0, 0, 0.674);
+}
 
-  .fondo-texto {
-    background-color: rgba(0, 0, 0, 0.674);
-  }
+.color-fondo {
+  background-color: rgb(196, 255, 230);
+}
 
-  .color-fondo {
-    background-color: rgb(196, 255, 230);
-  }
+.imagenes-galeria {
+  height: 20%;
+  width: 20%;
+}
 
-  .imagenes-galeria {
-    height: 20%;
-    width: 20%;
-  }
+.rectas1, .recetas2, .receta3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-  .recetas1, .recetas2, .recetas3 {
+.recetas1 article, .recetas2 article, .recetas3 article {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.recetas1 img, .recetas2 img, .recetas3 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.recetas1 p, .recetas2 p, .recetas3 p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .responsiveg {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    article {
-      width: calc(25% - 20px);
-      margin-bottom: 20px;
-      text-align: center;
-
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto 10px;
-      }
-
-      p {
-        margin-bottom: 10px;
-      }
-    }
+    flex-direction: column;
   }
-
-  @media (max-width: 768px) {
-    .responsiveg {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .imagenes-galeria {
-      height: auto;
-      width: 80%;
-      display: block;
-      margin: 0 auto;
-      padding: 10px;
-    }
+  .imagenes-galeria {
+    height: auto;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
   }
 }
 
-.cuerpo-del-documento {
-  @include estilos-comunes;
-}
+/*# sourceMappingURL=styles.css.map */
