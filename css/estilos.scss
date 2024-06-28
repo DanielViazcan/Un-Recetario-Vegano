@@ -1,0 +1,64 @@
+$primary-color: #198754;
+$secondary-color: #0d6efd;
+$body-bg: #d1ecf1;
+
+body {
+    background-color: $body-bg;
+}
+
+.hero {
+    height: 300px;
+    background-color: $primary-color;
+    text-align: center;
+}
+
+.fondo-texto {
+    background-color: $secondary-color;
+}
+
+.navbar {
+    background-color: $primary-color;
+
+    .nav-link {
+        color: white;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.card {
+    margin-bottom: 20px;
+
+    .card-title {
+        color: $primary-color;
+        font-size: 1.2em;
+    }
+
+    .card-text {
+        color: $secondary-color;
+    }
+
+    .btn-success {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+
+        &:hover {
+            background-color: darken($secondary-color, 10%);
+            border-color: darken($secondary-color, 10%);
+        }
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
